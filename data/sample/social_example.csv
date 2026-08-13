@@ -1,0 +1,9 @@
+account_handle,account_created_date,post_timestamp,likes,retweets,replies
+bot_alpha01,2026-08-01,1749999940,12,4,1
+bot_alpha02,2026-08-01,1749999955,9,3,0
+bot_alpha03,2026-08-01,1749999970,15,5,2
+bot_alpha04,2026-08-01,1749999985,11,2,1
+bot_alpha05,2026-08-01,1750000005,20,6,3
+bot_alpha06,2026-08-01,1750000020,14,4,1
+real_trader_88,2021-03-14,1750001800,3,0,0
+crypto_fan_22,2019-11-02,1750003200,7,1,0
