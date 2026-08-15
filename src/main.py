@@ -18,6 +18,7 @@ def main():
     parser.add_argument("--social-csv", required=True, help="Path to CSV of social posts about the token")
     parser.add_argument("--launch-timestamp", type=int, default=None, help="Unix seconds of pool creation, if known")
     parser.add_argument("--max-buyers", type=int, default=50)
+    parser.add_argument("--max-pages", type=int, default=5)
     parser.add_argument("--out", default="report.json")
     args = parser.parse_args()
 
@@ -31,6 +32,7 @@ def main():
         launch_timestamp=args.launch_timestamp,
         max_buyers=args.max_buyers,
     )
+    max_pages=args.max_pages,
     print(f"Found {len(buyers)} early buyers. Tracing funding sources (this is the slow part)...")
     buyers = enrich_with_funding_sources(buyers, api_key)
 
