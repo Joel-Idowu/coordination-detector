@@ -27,10 +27,11 @@ def main():
         raise SystemExit("Set HELIUS_API_KEY in your .env file first (see .env.example).")
 
     print(f"Pulling early buyers for pool {args.pool} ...")
-    buyers = get_early_buyers(
-        args.pool, api_key,
+   buyers = get_early_buyers(
+        args.pool, api_key, args.token,
         launch_timestamp=args.launch_timestamp,
         max_buyers=args.max_buyers,
+        max_pages=args.max_pages,
     )
     max_pages=args.max_pages,
     print(f"Found {len(buyers)} early buyers. Tracing funding sources (this is the slow part)...")
